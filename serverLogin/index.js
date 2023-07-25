@@ -9,7 +9,7 @@ const UsertRoute = require("./routes/UserRoute");
 
 // database connection
 connection();
-app.get("/", (req, res) => {
+app.get("", (req, res) => {
   res.send("Halo, ini halaman utama backend!");
 });
 // middlewares
