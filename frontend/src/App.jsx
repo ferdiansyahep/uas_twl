@@ -21,8 +21,8 @@ function App() {
       <Routes>
         {user && <Route path="/" exact element={<Dashboard />} />}
 
-        {user && <Route path="/add" exact element={<AddPage />} />}
-        {user && <Route path="/edit/:id" exact element={<EditPage />} />}
+        <Route path="/add" exact element={<AddPage />} />
+        <Route path="/edit/:id" exact element={<EditPage />} />
         <Route path="/signup" exact element={<Signup />} />
         <Route path="/login" exact element={<Login />} />
         <Route path="/" element={<Navigate replace to="/login" />} />
