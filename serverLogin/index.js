@@ -17,10 +17,7 @@ app.use(express.json());
 app.use(cors());
 app.use(UsertRoute);
 app.use((req, res, next) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://ferdiansyahep-uas.vercel.app/"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
   next();
 });
 // routes
