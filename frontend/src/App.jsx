@@ -26,8 +26,6 @@ function App() {
         <Route path="/signup" exact element={<Signup />} />
         <Route path="/login" exact element={<Login />} />
         <Route path="/" element={<Navigate replace to="/login" />} />
-        <Route path="/edit/:id" element={<Navigate replace to="/login" />} />
-        <Route path="/add" element={<Navigate replace to="/login" />} />
         <Route
           path="/editbook/:slug"
           element={<Navigate replace to="/login" />}
